@@ -14,6 +14,10 @@
     <div class="container">
         <h1>ini home</h1>
         <h1>selamat datang <?= $this->session->userdata('nama');?></h1>
+        
+        <form action="<?= base_url();?>/login/logout" method="post">
+        <button type="submit">logout</button>
+        </form>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
